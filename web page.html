@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Basic Web Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 10px;
+            background-color: #f2f2f2;
+        }
+
+        section {
+            margin-top: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Web Page</h1>
+    </header>
+
+    <section>
+        <h2>My Introduction</h2>
+        <p>This is my webpage to show my work</p>
+    </section>
+
+    <section>
+        <h2>Interactive Element</h2>
+        <button onclick="showMessage()">Click me</button>
+        <p id="outputMessage"></p>
+
+        <script>
+            function showMessage() {
+                document.getElementById("outputMessage").innerHTML = "Hello, myself Akshat!";
+            }
+        </script>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Web Page Introduction. Thank You.</p>
+    </footer>
+</body>
+</html>

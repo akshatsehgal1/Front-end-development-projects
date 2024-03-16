@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 20px;
+            background-color: #3498db;
+            color: #0f0616;
+        }
+
+        header {
+            text-align: center;
+            padding: 10px;
+            background-color: #25ad5e;
+            border-bottom: 2px solid #4a96e2;
+        }
+
+        section {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #4c20b0;
+            border: 1px solid #bdc3c7;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #2980b9;
+            color: #2c0f29;
+            border-top: 2px solid #2c3e50;
+        }
+
+        button {
+            background-color: #2ecc71;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Aki Web page</h1>
+    </header>
+
+    <section>
+        <h2>About Me</h2>
+        <p>This is my webpage.</p>
+    </section>
+
+    <section>
+        <h2>Login Here</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name">
+
+        <label for="contact">Contact Number:</label>
+        <input type="text" id="contact" placeholder="Enter contact number">
+
+        <button onclick="login()">Login</button>
+        <p id="loginMessage"></p>
+
+        <script>
+            function login() {
+                const name = document.getElementById("name").value;
+                const contact = document.getElementById("contact").value;
+                document.getElementById("loginMessage").innerHTML = `Hello, ${name}! Your contact number is ${contact}.`;
+            }
+        </script>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Stylish Web Page. Thank You.</p>
+    </footer>
+</body>
+</html>
